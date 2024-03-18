@@ -1,0 +1,36 @@
+from aiogram import types
+
+taom = types.InlineKeyboardMarkup()
+pitsa = types.InlineKeyboardButton(text="Pitsa 🍕", callback_data="taom1")
+lavash = types.InlineKeyboardButton(text="Lavash 🌯", callback_data="taom2")
+burger = types.InlineKeyboardButton(text="Burger 🍔", callback_data="taom3")
+klap = types.InlineKeyboardButton(text="Klap 🥪", callback_data="taom3")
+taom.add(pitsa,lavash,burger,klap)
+
+ichimlik = types.InlineKeyboardMarkup()
+choy = types.InlineKeyboardButton(text="Limon choy 🫖", callback_data="ichimlik1")
+cola = types.InlineKeyboardButton(text="Cola 🥤", callback_data="ichimlik2")
+maxito = types.InlineKeyboardButton(text="Maxito 🧃", callback_data="ichimlik3")
+pepsi = types.InlineKeyboardButton(text="Pepsi 🧉", callback_data="ichimlik4")
+ichimlik.add(choy,cola,maxito,pepsi)
+
+desert = types.InlineKeyboardMarkup()
+paxlava = types.InlineKeyboardButton(text="Paxlava 🧇", callback_data="desert1")
+medovi = types.InlineKeyboardButton(text="Medovi 🥮", callback_data="desert2")
+bolichka = types.InlineKeyboardButton(text=" Bolichka 🥠", callback_data="desert3")
+tort = types.InlineKeyboardButton(text="Tort 🎂", callback_data="desert4")
+desert.add(paxlava,medovi,bolichka,tort)
+
+salat = types.InlineKeyboardMarkup()
+seriz = types.InlineKeyboardButton(text="sezir 🥦", callback_data="asarti1")
+baxor = types.InlineKeyboardButton(text="  baxor 🥒", callback_data="asarti2")
+sviji = types.InlineKeyboardButton(text=" sviji 🥑", callback_data="asarti3")
+alivye = types.InlineKeyboardButton(text=" alivye 🫒", callback_data="asarti4")
+salat.add(seriz,baxor,sviji,alivye)
+
+asarte = types.InlineKeyboardMarkup()
+ikki = types.InlineKeyboardButton(text="2 - kishilik 👫  ", callback_data="salat1")
+uch = types.InlineKeyboardButton(text=" 3 - kishilik 👨‍👩‍👦", callback_data="salat2")
+besh = types.InlineKeyboardButton(text=" 5 - kishilik 👩‍👩‍👧‍👦", callback_data="salat3")
+yetti = types.InlineKeyboardButton(text=" 7 - kishilik 👨‍👨‍👦‍👦👨‍👩‍", callback_data="salat4")
+asarte.add(ikki,uch,besh,yetti)
